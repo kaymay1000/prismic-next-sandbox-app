@@ -1,0 +1,10 @@
+{
+  "slices": {
+    "TestSlice": {},
+    "TextImageRight": {
+      "default-slice": {
+        "primary": {}
+      }
+    }
+  }
+}

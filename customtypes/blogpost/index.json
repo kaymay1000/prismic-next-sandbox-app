@@ -1,0 +1,48 @@
+{
+  "id": "blogpost",
+  "label": "BlogPost",
+  "repeatable": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "blog-post"
+        }
+      },
+      "blog_post_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading2,heading3,heading4,heading5,heading6",
+          "label": "Blog Post title"
+        }
+      },
+      "blog_post_title_color": {
+        "type": "Color",
+        "config": {
+          "label": "Blog Post title color"
+        }
+      },
+      "blog_post_body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "Blog Post body"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "text_image_right": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "status": true
+}
